@@ -53,10 +53,12 @@ CMD ["./main"]
    - Reduz a superfície de ataque ao remover ferramentas desnecessárias na imagem final.
 
 
-
-![image](https://github.com/user-attachments/assets/8e5f0bbb-6ef8-4d20-9b2e-e625c94e089b)
-
+![image](https://github.com/user-attachments/assets/8b95e2d9-60d6-46bf-be2f-aad16daa4742)
 
 
-![image](https://github.com/user-attachments/assets/747a903f-e38a-4ab2-8add-534f0def1f26)
+
+![image](https://github.com/user-attachments/assets/d4cd3852-dbf5-465e-8f94-5021ec1524b4)
+
+
+
 
