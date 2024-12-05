@@ -1,0 +1,15 @@
+# Etapa 1: Construção do binário
+FROM golang:1.23 AS build
+WORKDIR /build
+# Copiar arquivos de dependências do código e construir
+COPY . .
+RUN CGO_ENABLED=0 GOOS=linux go build -a -installsuffix cgo -o main .
+
+
+# Etapa 2: Imagem final para execução
+FROM alpine:3.20.3 AS app
+WORKDIR /app
+# Copiar o binário gerado
+COPY --from=build /build/main .
+# Definir o executável padrão
+ENTRYPOINT [ "./main" ]
